@@ -245,12 +245,6 @@ struct Array
 		return data[ count ];
 	}
 
-	[[nodiscard]] inline Type &pop_random()
-	{
-		massert( count > 0 );
-		return pop_index( count - 1 );
-	}
-
 	[[nodiscard]] inline bool has_value( const Type &t ) const
 	{
 		const Type *p = data;
